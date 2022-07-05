@@ -1,0 +1,143 @@
+.coin-container {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #fff;
+  margin-top: 15px;
+}
+
+.coin-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  min-width: 25%;
+}
+
+.coin img {
+  height: 45px;
+  width: 45px;
+  margin: 10px;
+}
+.coin h1 {
+  font-size: 16px;
+  width: 150px;
+  margin-left: 10px;
+}
+
+.coin-data {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 7px;
+}
+
+.price-percent {
+  display: flex;
+}
+
+.coin-price {
+  width: 120px;
+  margin-top: 18px;
+}
+
+.coin-percent {
+  font-size: 20px;
+  width: 150px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.price-of-percent {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.coin-marketcap {
+  width: 190px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+@media only screen and (max-width: 600px) {
+  .coin-container {
+    width: 80%;
+    height: 30vh;
+  }
+
+  .coin-row {
+    width: 100%;
+    margin: 15px;
+  }
+
+  .coin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 65px;
+    margin-right: 20px;
+  }
+
+  .coin img {
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+  }
+
+  .coin h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .coin-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .price-percent {
+    border-bottom: 1px solid rgb(95, 91, 99);
+  }
+
+  .coin-price {
+    padding-top: 20px;
+  }
+
+  .coin-percent {
+    margin: 0;
+    width: 100px;
+  }
+
+  .percent {
+    padding: 20px;
+
+    border-left: 1px solid rgb(95, 91, 99);
+  }
+
+  .price-of-percent {
+    margin-top: 5px;
+  }
+
+  .coin-marketcap {
+    margin-top: 35px;
+  }
+}
