@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   border-bottom: 2px solid #fff;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .coin-row {
@@ -11,24 +11,27 @@
   justify-content: center;
   align-items: center;
   height: 80px;
-  width: 100%;
+  width: 650px;
 }
 
 .coin {
   display: flex;
   align-items: center;
-  min-width: 25%;
+  min-width: 100px;
+  cursor: pointer;
 }
 
 .coin img {
-  height: 45px;
-  width: 45px;
+  height: 50px;
+  width: 50px;
   margin: 10px;
 }
+
 .coin h1 {
-  font-size: 16px;
-  width: 150px;
+  font-size: 18px;
+  width: 100px;
   margin-left: 10px;
+  letter-spacing: 0.5px;
 }
 
 .coin-data {
@@ -38,49 +41,59 @@
   margin: 7px;
 }
 
+.Rs {
+  letter-spacing: 1px;
+}
+
+.percent {
+  width: 150px;
+  height: 60px;
+}
+
 .price-percent {
   display: flex;
 }
 
 .coin-price {
   width: 120px;
-  margin-top: 18px;
+  padding-top: 18px;
+  font-size: 17px;
 }
 
 .coin-percent {
   font-size: 20px;
   width: 150px;
-  margin-top: 10px;
-  margin-bottom: 0;
+  padding: 3px;
 }
 
 .price-of-percent {
   font-size: 12px;
-  margin-top: 3px;
+  padding: 5px;
 }
 
 .coin-marketcap {
   width: 190px;
   padding-left: 10px;
-  margin-top: 10px;
+  padding-top: 5px;
+  font-size: 18px;
 }
 
 .red {
-  color: red;
+  color: #e6192e;
 }
 
 .green {
-  color: green;
+  color: rgb(0, 255, 0);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .coin-container {
-    width: 80%;
-    height: 30vh;
+    width: 400px;
+    height: 210px;
   }
 
   .coin-row {
-    width: 100%;
+    height: 130px;
     margin: 15px;
   }
 
@@ -89,7 +102,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     margin-top: 65px;
     margin-right: 20px;
   }
@@ -119,25 +131,87 @@
   }
 
   .coin-price {
-    padding-top: 20px;
+    margin-bottom: 5px;
   }
 
   .coin-percent {
-    margin: 0;
+    width: 130px;
+  }
+
+  .percent {
+    margin-bottom: 10px;
+    border-left: 3px solid rgb(95, 91, 99);
+  }
+
+  .price-of-percent {
+    width: 130px;
+  }
+
+  .coin-marketcap {
+    margin: 15px 0px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .coin-search {
+    text-align: center;
+  }
+
+  .coin-container {
+    width: 350px;
+    height: 200px;
+  }
+
+  .coin {
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .coin img {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 5px;
+  }
+
+  .coin h1 {
+    width: 80px;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .coin-data {
+    margin-top: 70px;
+    margin-left: 0px;
+  }
+
+  .coin-price {
+    padding-top: 20px;
+    padding-right: 5px;
+  }
+
+  .price-percent {
+    width: 200px;
+    border-bottom: 1px solid rgb(95, 91, 99);
+  }
+
+  .coin-percent {
     width: 100px;
   }
 
   .percent {
-    padding: 20px;
-
-    border-left: 1px solid rgb(95, 91, 99);
+    border-left: 3px solid rgb(95, 91, 99);
   }
 
   .price-of-percent {
-    margin-top: 5px;
+    width: 100px;
+    padding-top: 5px;
   }
 
   .coin-marketcap {
-    margin-top: 35px;
+    margin: 15px 0px;
+    font-size: 18px;
   }
 }

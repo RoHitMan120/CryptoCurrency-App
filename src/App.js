@@ -1,9 +1,7 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
 import "./App.css";
-
+import { useState, useEffect } from "react";
+import axios from "axios";
 //Component
-
 import Coin from "./Coin";
 
 function App() {
@@ -17,7 +15,6 @@ function App() {
       )
       .then((res) => {
         setCoins(res.data);
-        console.log(res.data);
       })
       .catch((error) => console.log(error));
   }, []);

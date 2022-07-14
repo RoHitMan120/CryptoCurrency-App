@@ -10,6 +10,7 @@ const Coin = ({
   marketCap,
   priceChange,
   volume,
+  handleClick,
 }) => {
   let pricechangePercentage = priceChangePercentage?.toFixed(2);
 
@@ -22,7 +23,10 @@ const Coin = ({
         </div>
         <div className="coin-data">
           <div className="price-percent">
-            <div className="coin-price">Rs.{price}</div>
+            <div className="coin-price">
+              <strong className="Rs">Rs.</strong>
+              {price}
+            </div>
             <div className="percent">
               {pricechangePercentage < 0 ? (
                 <div className="coin-percent red">{pricechangePercentage}%</div>
@@ -32,12 +36,14 @@ const Coin = ({
                 </div>
               )}
               <div className="price-of-percent">
-                Rs.{priceChange.toFixed(2)}
+                <strong className="Rs">Rs.</strong>
+                {priceChange.toFixed(2)}
               </div>
             </div>
           </div>
           <div className="coin-marketcap">
-            Market cap : Rs.{marketCap?.toLocaleString()}
+            Market cap : <strong className="Rs">Rs.</strong>
+            {marketCap?.toLocaleString()}
           </div>
         </div>
       </div>
