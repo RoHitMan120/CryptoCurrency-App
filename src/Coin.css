@@ -12,6 +12,8 @@
   align-items: center;
   height: 80px;
   width: 650px;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 .coin {

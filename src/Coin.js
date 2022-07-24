@@ -10,7 +10,6 @@ const Coin = ({
   marketCap,
   priceChange,
   volume,
-  handleClick,
 }) => {
   let pricechangePercentage = priceChangePercentage?.toFixed(2);
 

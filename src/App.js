@@ -1,8 +1,10 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+
 //Component
 import Coin from "./Coin";
+import Search from "./Search";
 
 function App() {
   const [coins, setCoins] = useState([]);
@@ -29,17 +31,7 @@ function App() {
 
   return (
     <div className="crypto-app">
-      <div className="coin-search">
-        <h1>Search your desired Crypto</h1>
-        <form action="">
-          <input
-            type="text"
-            className="coin-input"
-            placeholder="Enter Crypto name..."
-            onChange={handleChange}
-          />
-        </form>
-      </div>
+      <Search handleChange={handleChange} />
 
       {filteredCoins.map((coin) => {
         return (
